@@ -1,6 +1,5 @@
 # binary_tree.py
 
-import sys
 
 class Binary_object:
     '''
