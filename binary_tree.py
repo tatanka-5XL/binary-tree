@@ -12,15 +12,6 @@ class Binary_object:
         self.left = left
         self.right = right
 
-    def give_number(self):
-        return
-
-    def give_left(self):
-        return self.left
-
-    def give_right(self):
-        return self.right
-
 
 def generate_tree():
     '''
