@@ -95,6 +95,9 @@ def main():
         else:
             input2 = get_direct_parent(tree, input2)
 
+    if input1 == (orig_input1 or orig_input2):
+        input1 = get_direct_parent(tree, input1)
+
     print(f'The highest common parent of objects {orig_input1} and {orig_input2} in a binary tree is object {input1}.')
     return input1
 
