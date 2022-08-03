@@ -33,10 +33,10 @@ def generate_tree():
     return tree
 
 
-def input_object(number):
+def input_object(sequence):
     while True:
         try:
-            input_object = int(input(f'Provide object number {number}: '))
+            input_object = int(input(f'Provide {sequence} object: '))
             assert (input_object > 1) and (input_object < 32)
             break
         except:
@@ -87,10 +87,10 @@ def main():
         Provide two objects to calculate their first common parent!
 
         """)
-    orig_input1 = input_object(1)
+    orig_input1 = input_object('first')
     while True:
         try:
-            orig_input2 = input_object(2)
+            orig_input2 = input_object('second')
             assert orig_input2 != orig_input1
             break
         except:
@@ -105,7 +105,7 @@ def main():
         else:
             input2 = get_direct_parent(tree, input2)
 
-    print(f'The highest common parent of numbers {orig_input1} and {orig_input2} in a binary tree is number {input1}.')
+    print(f'The highest common parent of objects {orig_input1} and {orig_input2} in a binary tree is object {input1}.')
     return input1
 
 main()
